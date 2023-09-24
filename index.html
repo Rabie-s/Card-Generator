@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/output.css">
+    <title>Card generator</title>
+</head>
+
+<body class="bg-blue-700">
+
+    <div class="flex flex-col items-center gap-y-12 py-2 md:flex-row md:justify-around md:items-center md:h-screen">
+
+        <div class="w-96 bg-gray-200 rounded-lg shadow-lg shadow-white p-5 flex flex-col gap-y-2">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="py-1 px-1 outline-none rounded-md w-full">
+            <label for="email">Email</label>
+            <input type="text" id="email" class="py-1 px-1 outline-none rounded-md w-full">
+            <label for="address">Address</label>
+            <input type="text" id="address" class="py-1 px-1 outline-none rounded-md w-full">
+            <label for="phoneNumber">Phone number</label>
+            <input type="text" id="phoneNumber" class="py-1 px-1 outline-none rounded-md w-full">
+            <label for="personImage">Person image</label>
+            <input type="file" accept="image/*" id="personImage"
+                class="text-slate-600 file:bg-slate-700 hover:file:bg-slate-800 file:p-2 file:rounded-lg file:text-white file:outline-none file:border-0 file:cursor-pointer">
+        </div>
+
+        <div id="card"
+            class="w-96 bg-gray-200 rounded-lg shadow-lg shadow-white p-5 flex flex-col gap-y-2 items-center">
+            <img class="w-36 h-36 rounded-full" src="defaultImage.jpg" id="cardPersonImage">
+            <h3 id="cardName" class="text-black text-2xl tracking-normal">Rabie Smadi</h3>
+            <h4 id="cardEmail" class="text-black text-xl">rabie@test.com</h4>
+            <h4 id="cardAddress" class="text-black text-base">Jordan-Ajloun</h4>
+            <h4 id="cardPhoneNumber" class="text-black text-base">0000000000</h4>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
